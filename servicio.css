@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+    background: 
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+  #fff;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+/*CABECERA*/
+header {
+    max-width: 1000px;
+    min-height: 130px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+    background-image: url(IMG/amador.a) ;
+}
+
+#logo {
+    width: 320px;
+    margin-top: 20px;
+    margin-left: 20px;
+    animation: 1s entradalogo 1;
+}
+
+#logo img:hover {
+    filter: opacity(0.8);
+}
+
+
+/*CABECERA*/
+
+
+
+/*MENU-HORIZONTAL*/
+#menu-h {
+    max-width: 1000px;
+    min-height: 50px;
+    background: #000;
+    margin: 0 auto;
+}
+
+#menu-h ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-h a {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background: #000;
+    font-family: arial;
+    font-size: 18px;
+}
+
+#menu-h a:hover {
+    box-shadow: inset 15px 30px 50px blue;
+}
+
+#menu-h ul ul {
+    display: none;
+    position: absolute;
+}
+
+#menu-h ul li:hover ul {
+    display: block;
+}
+
+/*MENU-HORIZONTAL*/
+
+
+#banner {
+    max-width: 1000px;
+    min-height: 250px;
+    background: #080808;
+    margin: 0 auto;
+}
+
+#contenedor {
+    max-width: 1000px;
+    min-height: 700px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+}
+
+
+/*MENU-VERTICAL*/
+#menu-v {
+    width: 300px;
+    min-height: 700px;
+    float: left;
+    background-image: url(IMG/curry.jpg) ;
+    background-size:cover ;
+
+}
+
+#menu-v ul {
+    list-style: none;
+    padding: 10px;
+
+}
+
+#menu-v a {
+    display: block;
+    color: #fcfafa;
+    padding: 20px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-family: arial;
+    font-size: 18px;
+    background: #000;
+}
+
+#menu-v a:hover {
+    box-shadow: inset 15px 30px 50px blue;
+}
+
+#menu-v a:hover img {
+    animation: 1s rotacion 1;
+}
+
+/*MENU-VERTICAL*/
+
+
+/*CONTENIDO*/
+#contenido {
+    width: 700px;
+    min-height: 700px;
+    color: #fff;
+    float: right;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #000;
+}
+
+
+/*CONTENIDO*/
+
+
+/*PIE DE PAGINA*/
+footer {
+    max-width: 1000px;
+    background: #000;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 18px;
+}
+
+
+/*PIE DE PAGINA*/
+
+
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+
+
+
+/*KEYFRANMES*/
+
+@keyframes entradalogo {
+    0% {
+        transform: translateX(500px);
+    }
+}
+
+@keyframes rotacion {
+    0% {
+        transform: rotate(250deg);
+    }
+}
